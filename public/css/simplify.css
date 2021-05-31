@@ -1,0 +1,33 @@
+#DataTables_Table_0_length ::before{
+    content: "每页显示";
+    font-size: 16px;
+}
+
+#DataTables_Table_0_length ::after{
+    content: "记录";
+    font-size: 16px;
+}
+
+#DataTables_Table_0_filter ::before{
+    content: "搜索";
+    font-size: 16px;
+}
+
+.ligth-body{
+    table-layout:fixed;
+    word-wrap:break-word;
+    white-space:nowrap; 
+    text-overflow: ellipsis;
+}
+
+.ligth-body td{
+    max-width: 0px;
+    word-wrap:break-word;
+    white-space:nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dataTables_wrapper .no-footer{
+    width: 99%;
+}

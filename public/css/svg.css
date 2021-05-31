@@ -1,0 +1,210 @@
+/* 这个文件仅用于测试 没有压缩与格式化 结构混乱! */
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.svgLink,
+.svgLinktmp {
+  marker-end: url(#arrow);
+}
+.controler > form input[type$="radio"] {
+  width: 50px;
+  height: 50px;
+}
+.row .svgView {
+  width: 100%;
+  height: 100%;
+  float: left;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.row .controler {
+  width: 20%;
+  height: 100%;
+  float: left;
+  box-sizing: border-box;
+  overflow: auto;
+}
+.row .exp {
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  float: left;
+  box-sizing: border-box;
+  overflow: auto;
+}
+form > * {
+  float: left;
+}
+.noover {
+  padding: 0;
+}
+.click {
+  color: red;
+}
+.unclick {
+  color: green;
+}
+.repcard,
+.formcard,
+.card-body {
+  padding: 0;
+}
+.content-page,
+.wrapper {
+  height: 100%;
+}
+.content-page {
+  padding-top: 70px;
+}
+.container-fluid {
+  height: 100%;
+}
+.row {
+  height: 100%;
+}
+.col-lg-10,
+.col-lg-2 {
+  height: 75%;
+  overflow: hidden;
+}
+.col-lg-7,
+.col-lg-5 {
+  height: 25%;
+}
+.card .card-header {
+  padding: 10px;
+}
+.col-lg-7 > .card-block,
+.col-lg-5 > .card-block {
+  height: 100%;
+  margin-bottom: 0;
+}
+#repOut {
+  height: calc(100%-29px);
+}
+.ft {
+  margin-top: 20px;
+  min-height: 0;
+  height: auto !important;
+  padding: 20px 0;
+  background-color: #ccc;
+  color: #999;
+  text-align: center;
+}
+.ft p {
+  margin: 0;
+}
+#mbox {
+  position: relative;
+}
+#mbox i.open {
+  position: relative;
+  right: -35px;
+}
+#iq-sidebar-toggle i {
+  font-size: 20px;
+}
+.form-control {
+  display: inline-block;
+  width: auto;
+}
+.mybtn {
+  border: 1px solid #dce3e8;
+  border-radius: 2px;
+  color: #40485b;
+  background-color: #fff;
+}
+.mybtn:hover {
+  border: 1px solid rgba(173, 173, 173, 0.9);
+}
+.mybtn:nth-of-type(2),
+.mybtn:nth-of-type(5) {
+  border-left-style: none;
+  border-right-style: none;
+  border-radius: 0;
+}
+.mybtn:nth-of-type(1),
+.mybtn:nth-of-type(4) {
+  border-radius: 2px 0 0 2px;
+}
+.mybtn:nth-of-type(3),
+.mybtn:nth-of-type(6) {
+  border-radius: 0 2px 2px 0;
+}
+#setSZ,
+#setCol,
+#setSP {
+  height: 31px !important;
+  font-size: 16px;
+  padding: 2px;
+  line-height: 29px;
+}
+#setSP {
+  margin-right: 2px;
+}
+form {
+  position: relative;
+  height: 100%;
+  vertical-align: middle;
+}
+form > * {
+  line-height: 29px;
+  margin: 0;
+  position: relative;
+}
+.mathEnv2 > h1,
+.mathEnv > h1 {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  text-align: center;
+  color: rgba(17, 10, 87, 0.2);
+}
+form > p {
+  margin: 0 2px;
+}
+.mathEnv2,
+.mathEnv {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  float: left;
+  box-sizing: border-box;
+}
+.formcard {
+  height: 100% ;
+}
+.mathEnv2 {
+  overflow: auto;
+}
+.content-page {
+  overflow-y: auto;
+}
+.content-page .ft {
+  overflow: hidden;
+}
+.iq-top-navbar .iq-navbar-custom {
+  height: 100%;
+}
+.ft a {
+  color: #999;
+}
+button[disabled] {
+  cursor: not-allowed !important;
+  opacity: 0.65 !important;
+}
+footer {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+footer .card {
+  padding: 20px;
+}
+.col-lg-2 .card-body {
+  padding: 10px;
+}
+/*# sourceMappingURL=./style.css.map */

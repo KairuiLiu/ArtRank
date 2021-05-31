@@ -1,0 +1,13 @@
+{
+    "_connect":{
+        "host"     : "localhost",
+        "user"     : "root",
+        "password" : "lkr0101",
+        "database" : "PRTest"
+    },
+    "SECRET"       : "fsadflkasdjvancrac"
+}
+
+// 如果发现配置文件无法读取请修改如下行
+// _connect 在 ./js/mysql.js 第3行
+// SECRET 在 ./app.js  第22行

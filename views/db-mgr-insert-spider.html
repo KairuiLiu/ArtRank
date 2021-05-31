@@ -1,0 +1,86 @@
+﻿<div class="card">
+    <div class="card-header d-flex justify-content-between">
+        <div class="header-title">
+            <h4 class="card-title">添加文献</h4>
+        </div>
+    </div>
+    <div class="card-body">
+        <form action="page-list-category.html" data-toggle="validator">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="input-group">
+                        <input id="cnkilink" type="text" class="form-control" value="{{art.link}}"
+                            aria-label="cnkiLink">
+                        <div class="input-group-append">
+                            <button id="auis" class="btn btn-primary" type="button">自动填充</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label>标题 *</label>
+                        <input id="inp_title" type="text" class="form-control" value="{{art.title}}" required >
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="form-group ">
+                        <label>作者</label>
+                            {{each art.nopair item}}
+                            <div class="row col-12" id="inp_nopair">
+                                <input type="text" class="form-control col-5" value="{{item.name}}"  >
+                                <i class="las la-at" id="lineAt"></i>
+                                <input type="text" class="form-control col-5" value="{{item.organize}}" >
+                            </div>
+                            {{/each}}
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label>关键字 </label>
+                        {{each art.keyword item}}
+                            <input id="inp_keyword" type="text" class="form-control" value="{{item}}" >
+                        {{/each}}
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label>摘要</label>
+                        <textarea id="inp_summary" class="form-control" rows="3" >{{art.summary}}</textarea>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label>期刊 </label>
+                        <input id="inp_source" type="text" class="form-control" value="{{art.Source}}" >
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label>链接 *</label>
+                        <input id="inp_link" type="text" class="form-control" value="{{art.link}}" required >
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label>参考文献</label>
+                        {{each art.refNmLk item}}
+                            <div class="row col-12" id="inp_ref">
+                                <input type="text" class="form-control col-6" value="{{item.Title}}" >
+                                <input type="text" class="form-control col-6" value="{{item.Link}}" >
+                            </div>
+                        {{/each}}
+                    </div>
+                </div>
+                
+            <a id="btn_bk" href="javascript:;" class="btn btn-primary mr-2">返回</a>
+            <a id="btn_ns" href="javascript:;" class="btn btn-secondary mr-2">插入</a>
+            <a id="btn_rs" href="/db-mgr-insert.html" class="btn btn-light mr-2">重置</a>
+        </form>
+    </div>
+</div>
